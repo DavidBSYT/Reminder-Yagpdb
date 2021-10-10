@@ -1,0 +1,7 @@
+{{exec "remind" "2m30s" "__**Ya ponte a farmear!**__ <a:flecha2:850304237669843004>"}}
+{{ $embed := cembed
+ "title" "Reminder Activado"
+"description" "Prueba" 
+}}
+{{sendMessage nil $embed}}
+{{deleteResponse 0}}
