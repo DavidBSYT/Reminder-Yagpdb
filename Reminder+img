@@ -1,0 +1,12 @@
+{{exec "remind" "(tiempo)"  "(mensaje de llegada)" }}
+{{$thumb := "(portada img link)"}}
+{{$desc := (joinStr " " " (Mensaje embed) " )}}
+{{$image := "(Img grande link)"}}
+{{ $embed := cembed
+"title" "(titulo embed)"
+"description"  ($desc)
+"thumbnail" (sdict "url" $thumb)
+"image" (sdict "url" $image)
+}}
+{{sendMessage nil $embed}}
+{{deleteResponse 0}}
